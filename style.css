@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+h2,
+h1 {
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#cislo {
+  max-width: 100px;
+  margin: 0 auto;
+}
+select {
+  margin-top: 15px;
+}
+
+#vyber {
+  max-width: 100px;
+  margin-top: 2rem;
+}
+.btn-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.cenaZakaznik {
+  margin-top: 2rem;
+}
+.kontakt {
+  margin-top: 2rem;
+}
+h3 {
+  margin: 0 auto;
+  padding: 20px;
+}
+button {
+  margin: 0 auto;
+  max-width: 6rem;
+}

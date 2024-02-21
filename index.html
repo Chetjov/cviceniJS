@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Půjčovna kol</h1>
+      <h2>Druhy kol</h2>
+      <form action="">
+        <label for="horske">horské 500 Kč/den</label>
+        <input type="checkbox" name />
+        <input name="druh" id="horske" type="number" />
+        <label for="detske">Detské 200 Kč/den</label>
+        <input type="checkbox" />
+        <input name="druh" id="detske" type="number" />
+        <label for="silnicka">Silniční 1500 Kč/den</label>
+        <input type="checkbox" />
+        <input name="druh" id="silnicka" type="number" />
+        <label for="gravel">Gravel 2500 Kč/den</label>
+        <input type="checkbox" />
+        <input id="gravel" name="druh" type="number" />
+
+        <select name="vyber" id="vyber">
+          <option name="vyber" id="ctyri" value="4">4 dny</option>
+          <option name="vyber" id="sedm" value="7">7 dni</option>
+          <option id="ctrnact" name="vyber" value="14">14 dni</option>
+          <option id="tricet" name="vyber" value="30 ">30 dni</option>
+        </select>
+
+        <div class="btn-group">
+          <h3>Cyklonosic</h3>
+          <label for="strecha">cyklonosic stresni</label>
+          <input type="radio" id="strecha" name="nosic" value="5" />
+          <label for="tazne">cyklonosic tazne</label>
+          <input type="radio" id="tazne" name="nosic" value="10" />
+          <label for="bezNosice">Bez cyklonosice</label>
+          <input type="radio" id="bezNosice" name="nosic" value="0" />
+        </div>
+        <h3 class="cena">cena</h3>
+        <button class="vypocet">Vypocet</button>
+        <div class="cenaZakaznik">
+          <label for="cenaZak">Kolik jste ochotni zaplatit ?</label>
+          <input type="number" id="cenaZak" />
+          <p class="pomer"></p>
+        </div>
+        <div class="kontakt">
+          <label for="mail">Email</label>
+          <input type="email" name="mail" id="mail" required />
+          <input type="submit" id="submit" value="odeslat" />
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
